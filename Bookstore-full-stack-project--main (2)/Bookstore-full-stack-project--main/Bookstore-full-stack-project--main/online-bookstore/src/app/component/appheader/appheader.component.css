@@ -1,0 +1,54 @@
+.main
+{
+    align-items: center;
+    color: rgb(72, 16, 85);
+    font-size: 20px;
+    text-decoration-color: rgb(72, 16, 85);
+    font-weight: 500;
+    height: 650px;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    background-image: url('../../../../assets/pn.jpg');
+}
+.main div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #343a40; /* Dark text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.main div:hover {
+    background-color: #e9ecef; /* Light hover background color */
+    color: #007bff; /* Primary color for hover effect */
+}
+.main div.selected {
+    background-color: #007bff; /* Primary background color for selected item */
+    color: white; /* White text color for selected item */
+    font-weight: bold; /* Bold text for selected item */
+}
+.main mat-icon {
+    margin-left: 8px; /* Space between text and icon */
+    vertical-align: middle; /* Align icon vertically in the center */
+}
+.main #home{
+background-image: url('../../../../assets/ppl.jpg');
+background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 120px;
+  margin: auto;
+  width: 60%;
+  font-weight: bolder;
+ /* border: 3px solid ;*/
+  padding: 5px;
+    color:black;
+    font-size: 20px;
+}
+.main #home:hover{
+    color: #007bff;
+    background-color: #ffffff;
+}

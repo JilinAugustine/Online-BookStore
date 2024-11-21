@@ -1,0 +1,56 @@
+<div class="body"> 
+    <div class="container">  
+      <header><h1>Registration</h1></header>
+      <div *ngIf="errorMessage && errorMessage !== ''" class="error" id="errordiv">
+        {{errorMessage}}
+      </div>
+      <form>
+        <div class="fields">
+          <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" class="form-control" id="Name" [(ngModel)]="user.name" name="Name" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="dateOfBirth">Date Of Birth:</label>
+            <input type="date" class="form-control" id="dateOfBirth" [(ngModel)]="user.dateOfBirth" name="dateOfBirth" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="gender">Gender:</label>
+            <input type="text" class="form-control" id="gender" [(ngModel)]="user.gender" name="gender" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="emailId">Email:</label>
+            <input type="emailId" class="form-control" id="emailId" [(ngModel)]="user.emailId" name="emailId" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="district">District:</label>
+            <input type="text" class="form-control" id="district" [(ngModel)]="user.district" name="district" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" class="form-control" id="state" [(ngModel)]="user.state" name="state" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">ZipCode:</label>
+            <input type="number" class="form-control" id="zipCode" [(ngModel)]="user.zipCode" name="zipCode" required min="1">
+          </div>
+  
+          <div class="form-group">
+            <label for="phoneNumber">PhoneNumber:</label>
+            <input type="number" class="form-control" id="phoneNumber" [(ngModel)]="user.phoneNumber" name="phoneNumber" required  min="1">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="user.password" name="password" required>
+          </div>
+        </div>
+        <button type="submit"  class="submit-button"(click)="onSubmit()">Create</button>
+        <button type="button"  class="submit-button" (click)="goBack()">Back</button>
+      </form>
+    </div>
+  </div>

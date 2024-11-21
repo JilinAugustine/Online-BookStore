@@ -1,0 +1,29 @@
+<div class="main-content">
+  <h1>ORDER THE BOOKS</h1><br>
+  <div (click)="gotourl('cart-list')" [class.selected]="url === '/cart-list'">
+        <mat-icon>shopping_cart</mat-icon> Cart List
+    </div>
+    <div class="search-bar">
+      <input type="text" [(ngModel)]="searchText" (input)="onSearchInput($event)"
+        placeholder="Search Book">
+      <mat-icon class="search-icon">search</mat-icon>
+    </div>
+  <div class="left-panel">
+    <div *ngIf="book.length === 0"> Nothing in the book List right now</div>
+    <div *ngIf="book.length > 0">
+      <div class="book-details" *ngFor="let b of book">
+        <h2>{{ b.bookname }} &nbsp;&nbsp;&nbsp;<img align="right" [src]="b.image"></h2>
+        <p><strong></strong></p>
+        <p><strong>Author:</strong> {{ b.author }}</p>
+       
+        <p><strong>Description:</strong> {{ b.description }}</p>
+        <p><strong>Price:</strong> {{ b.mrpPrice }}</p>
+        
+        <input type="number" [id]="b.id" value="1" min="1" />
+        <button (click)="addToCart(b)" class="order-btn">
+          <mat-icon>add_shopping_cart</mat-icon> Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

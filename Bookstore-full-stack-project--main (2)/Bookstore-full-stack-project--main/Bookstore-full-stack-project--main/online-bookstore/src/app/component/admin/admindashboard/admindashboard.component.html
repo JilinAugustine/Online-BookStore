@@ -1,0 +1,48 @@
+<div class="dashboard-content">
+  <h1><br>Admin Dashboard</h1>
+
+  <div (click)="gotourl('list-book')" [class.selected]="url === '/list-book'">
+    <div class="stats">
+      <div class="stat-item">
+        <h3>Total Books <mat-icon>books</mat-icon></h3>
+        <p>{{ totalBooks }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div (click)="gotourl('list-category')" [class.selected]="url === '/list-category'">
+    <div class="stats">
+      <div class="stat-item">
+        <h3>Total Categories <mat-icon>category</mat-icon></h3>
+        <p>{{ totalCategories }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div (click)="gotourl('adminhome')" [class.selected]="url === '/adminhome'">
+    <div class="stats">
+      <div class="stat-item">
+        <h3>Total Users <mat-icon>people</mat-icon></h3>
+        <p>{{ totalUsers }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div (click)="gotourl('llistorder')" [class.selected]="url === '/llistorder'">
+    <div class="stats">
+      <div class="stat-item">
+        <h3>Total Orders Received <mat-icon>receipt_long</mat-icon></h3>
+        <p>{{ totalOrders }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div (click)="gotourl('listreview')" [class.selected]="url === '/listreview'">
+    <div class="stats">
+      <div class="stat-item">
+        <h3>Total Reviews <mat-icon>rate_review</mat-icon></h3>
+        <p>{{ totalReview }}</p>
+      </div>
+    </div>
+  </div>
+</div>

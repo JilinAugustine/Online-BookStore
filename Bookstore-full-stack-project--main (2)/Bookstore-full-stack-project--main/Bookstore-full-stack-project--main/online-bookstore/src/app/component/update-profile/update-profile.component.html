@@ -1,0 +1,57 @@
+<div class="heading">
+    <div><h1>
+        Update Profile
+    </h1></div>
+    <div><mat-icon (click)="closeDialog()">close</mat-icon></div>
+</div>
+<div class="profile-update-div">
+    <table style="table-layout:fixed;">
+        <tr>
+            <td><b>Name</b>:</td>
+            <td><input type="text" [(ngModel)]="user.name" /></td>
+        </tr>
+        <tr>
+            <td><b>Email</b>:</td>
+            <td><input type="text" [(ngModel)]="user.emailId" disabled/></td>
+        </tr>
+       
+        <tr>
+            <td><b>Date of Brirth</b>:</td>
+            <td><input type="text" [(ngModel)]="user.dateOfBirth" /></td>
+        </tr>
+       
+        <tr>
+            <td><b>Gender</b>:</td>
+            <td><input type="text" [(ngModel)]="user.gender" /></td>
+        </tr>
+
+        <tr>
+            <td><b>District</b>:</td>
+            <td><input type="text" [(ngModel)]="user.district" /></td>
+        </tr>
+
+        <tr>
+            <td><b>State</b>:</td>
+            <td><input type="text" [(ngModel)]="user.state" /></td>
+        </tr>
+
+        <tr>
+            <td><b>State</b>:</td>
+            <td><input type="text" [(ngModel)]="user.zipCode" /></td>
+        </tr>
+
+        <tr>
+            <td><b>PhoneNumber</b>:</td>
+            <td><input type="text" [(ngModel)]="user.phoneNumber" /></td>
+        </tr>
+
+        <tr>
+            <td><b>Password</b>:</td>
+            <td><input type="text" [(ngModel)]="user.password" /></td>
+        </tr>
+    </table>
+    
+</div>
+<div class="center-div">
+    <button  class="submit-button" (click)="update()">Update</button>
+</div>

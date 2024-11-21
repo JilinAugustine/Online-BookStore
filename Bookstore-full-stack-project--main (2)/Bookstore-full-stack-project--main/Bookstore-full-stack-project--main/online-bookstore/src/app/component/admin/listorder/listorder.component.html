@@ -1,0 +1,33 @@
+<div class="main-content">
+    <h1>LIST OF ORDER BOOK</h1><br>
+    <div class="left-panel">
+        <div class="search-bar">
+            <input type="text" [(ngModel)]="searchText" (input)="onSearchInput($event)" placeholder="Search order"><mat-icon >search</mat-icon>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Total Quantity</th>
+                <th>Total Price</th>
+                <th>Order Status</th>
+                <th>Payment Status</th>
+                <th>Ordered Date</th>
+                <!-- <th>Operation</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{ order.orderId }}</td>
+                <td>{{ order.totalquantity }}</td>
+                <td>{{ order.totalPrice }}</td>
+                <td>{{ order.orderStatus }}</td>
+                <td>{{ order.paymentStatus }}</td>
+                <td>{{ order.orderedDate }}</td>
+                <!-- <td><button (click)="updatebook(order.orderId)"><i class="fa fa-pencil" aria-hidden="true"><mat-icon >edit</mat-icon></i>&nbsp;Update</button></td>        </tr> -->
+      </tbody>
+    </table>
+    <div class="user-count">
+      <div *ngIf="orders.length === 0">Currently There is no orders books </div>
+    </div>
+</div>

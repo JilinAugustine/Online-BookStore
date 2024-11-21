@@ -1,0 +1,21 @@
+<!-- add-review.component.html -->
+ <div id="back">
+<div class="add-review-container">
+  <h2>Add Review</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="review.username" name="username" required disabled />
+    </div>
+    <div>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" [(ngModel)]="review.comment" name="comment" required></textarea>
+    </div>
+    <div>
+      <label for="rating">Rating:</label>
+      <input type="number" id="rating" [(ngModel)]="review.rating" name="rating" required min="1" max="5"/>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</div>

@@ -1,0 +1,131 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background-image: url('../../../../assets/about.avif');
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.left-panel {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.search-bar mat-icon {
+    margin-left: -40px;
+    cursor: pointer;
+    color: #999999;
+    transition: color 0.3s ease;
+}
+
+.search-bar mat-icon:hover {
+    color: #007bff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-count {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555555;
+}
+
+.user-count div {
+    padding: 10px;
+    background-color: #ffcccc;
+    color: #990000;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .left-panel {
+        padding: 15px;
+    }
+
+    table th, table td {
+        padding: 10px 8px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    table th, table td {
+        padding: 8px 5px;
+    }
+}

@@ -1,0 +1,37 @@
+<div class="main-content">
+    <h1>CART</h1><br>
+    <div class="left-panel">
+        <div *ngIf="cartList.length === 0"> Nothing in the cart right now</div>
+        <div *ngIf="cartList.length > 0">
+
+            <table border="2">
+                <tr>
+                    <!-- <th>Id</th> -->
+                    <th>Book Name</th>
+                    <th>Quantity</th>
+                    <th>MRP price</th>
+                    <th>Operation</th>
+                </tr>
+                <tr *ngFor="let cart of cartList">
+                    <!-- <td>
+                        {{cart?.cartId}}
+                    </td> -->
+                    <td>
+                        {{cart?.book?.bookname}}
+                    </td>
+                    <td>
+                        {{cart?.quantity}}
+                    </td>
+                    <td>
+                        {{cart?.mrpPrice}}
+                    </td>
+                    <td><button (click)="deletecategory(cart.cartId)"><i class="fa fa-trash" aria-hidden="true"><mat-icon >delete</mat-icon></i>&nbsp;Delete</button>
+                </tr>
+            </table>
+
+            Total : {{total}} <br>
+
+            <button (click)="placeOrder()">Place Order</button>
+        </div>
+    </div>
+</div>

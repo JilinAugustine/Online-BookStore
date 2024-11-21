@@ -1,0 +1,21 @@
+<div id="kal">
+<div class="main">
+    <h1>
+        {{isEdit ? 'Update': 'Add'}} Book
+    </h1>
+    <div class="form">
+        <input type="text" [(ngModel)]="book.bookname" placeholder="Add book"/>
+        <input type="text" [(ngModel)]="book.author" placeholder="Add author"/>
+        <select [(ngModel)]="category.id" placeholder="Add catgory">
+            <option *ngFor="let category of catgoryList" [value]="category.id">{{category.name}}</option>
+           </select>
+        <input type="text" [(ngModel)]="book.publisher" placeholder="Add publisher"/>
+        <input type="text" [(ngModel)]="book.description" placeholder="Add description"/>
+        <input type="text" [(ngModel)]="book.bquantity" placeholder="Add quantity"/>
+        <input type="text" [(ngModel)]="book.mrpPrice" placeholder="Add mrp Price"/>
+        <input type="text" [(ngModel)]="book.isbn" placeholder="Add isbn"/>
+        <input type="text" [(ngModel)]="book.image" placeholder="Add image ink"/>
+        <button  (click)="addUpdateBook()" class="btn btn-primary" >{{isEdit ? 'Update': 'Add'}}</button>
+    </div>
+</div>
+</div>

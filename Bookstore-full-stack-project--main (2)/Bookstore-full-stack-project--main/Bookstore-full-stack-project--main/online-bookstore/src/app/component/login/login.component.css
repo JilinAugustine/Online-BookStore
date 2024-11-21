@@ -1,0 +1,158 @@
+/* Outer container to center the login box */
+h1 {
+  text-align: center;
+  /*background-image: radial-gradient(circle 759px at -6.7% 50%, rgba(80, 131, 73, 1) 0%, rgba(140, 209, 131, 1) 26.2%, rgba(178, 231, 170, 1) 50.6%, rgba(144, 213, 135, 1) 74.1%, rgba(75, 118, 69, 1) 100.3%);*/
+  background-image: url('../../../../assets/head.webp');
+  height: 2.5em;
+  background-position: center;
+  background-size: cover;
+  padding: 15px;
+  width: 900px;
+}
+.outer-container h1{
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 2.5em;
+  background-position: center;
+  background-size: cover;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 50%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outer-container {
+  background-image: url('../../../../assets/library.webp'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Container for the login box */
+.login-container {
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+h2{
+  font-size: 2em;
+  color: #162938;
+  text-align: center;
+}
+.form-group{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+}
+.form-group label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-weight: 500;
+  pointer-events: none;
+  transition:.5s;
+  
+}
+.form-group input:focus~label,
+.form-group input:valid~label{
+  top: -5px;
+}
+.form-group input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #162938;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+.form-group .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #162938;
+  line-height: 57px;
+}
+.error-message{
+  color: red;
+}
+.remember-forgot{
+  float: right;
+  font-size:.9em;
+  color: #162938;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+}
+
+.remember-forgot label input{
+  accent-color: #162938;
+  margin-right: 3px;
+}
+.remember-forgot a{
+  color: #162938;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  cursor: pointer;
+  text-decoration:underline;
+}
+.btn-block{
+  width: 100%;
+  height: 45px;
+  background:#162938 ;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+.login-register{
+  font-size: .9em;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a{
+  color: #162938;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-register p a:hover{
+  text-decoration:underline;
+  color: blue;
+}

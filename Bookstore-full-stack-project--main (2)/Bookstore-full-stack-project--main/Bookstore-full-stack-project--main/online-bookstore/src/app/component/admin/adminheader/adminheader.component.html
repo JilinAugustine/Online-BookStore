@@ -1,0 +1,38 @@
+<div class="main">
+    <div class="profile" >
+        <div class="profile" (click)="goToProfile(user.id)">
+            <div class="icon-item">
+                <mat-icon>account_circle</mat-icon>
+            </div>
+            <div class="uname">{{user.name}}</div>
+        </div>
+    </div>
+    
+    <div (click)="gotourl('admindashboard')" [class.selected]="url === '/admindashboard'">
+        <mat-icon>dashboard</mat-icon> Dashboard
+    </div>
+    <div (click)="gotourl('adminhome')" [class.selected]="url === '/adminhome'">
+        <mat-icon>people</mat-icon> List User
+    </div>
+    <div (click)="gotourl('add-book')" [class.selected]="url === '/add-book'">
+        <mat-icon>add_box</mat-icon> Add Book
+    </div>
+    <div (click)="gotourl('list-book')" [class.selected]="url === '/list-book'">
+        <mat-icon>list</mat-icon> List Book
+    </div>
+    <div (click)="gotourl('add-category')" [class.selected]="url === '/add-category'">
+        <mat-icon>add_circle</mat-icon> Add Category
+    </div>
+    <div (click)="gotourl('list-category')" [class.selected]="url === '/list-category'">
+        <mat-icon>category</mat-icon> List Category
+    </div>
+    <div (click)="gotourl('admin-order-list')" [class.selected]="url === '/admin-order-list'">
+        <mat-icon>receipt_long</mat-icon> Order List
+    </div>
+    <div (click)="gotourl('listreview')" [class.selected]="url === '/listreview'">
+        <mat-icon>rate_review</mat-icon> List Review
+    </div>
+    <div (click)="gotourl('logout')" [class.selected]="url === '/logout'">
+        <mat-icon>logout</mat-icon> Logout
+    </div>
+</div>

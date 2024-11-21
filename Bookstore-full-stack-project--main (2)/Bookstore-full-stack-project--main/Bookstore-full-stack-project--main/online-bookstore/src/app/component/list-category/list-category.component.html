@@ -1,0 +1,25 @@
+<div class="main-content">
+    <h1>LIST OF CATEGORYS</h1><br>
+    <div class="left-panel">
+        <div class="search-bar">
+            <input type="text" [(ngModel)]="searchText" (input)="onSearchInput($event)" placeholder="Search category"><mat-icon >search</mat-icon>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Operation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let category of categorys">
+                <td>{{ category.id }}</td>
+                <td>{{ category.name }}</td>
+                <td><button (click)="deletecategory(category.id)"><i class="fa fa-trash" aria-hidden="true"><mat-icon >delete</mat-icon></i>&nbsp;Delete</button>&nbsp;&nbsp;<button (click)="updatecategory(category.id)"><i class="fa fa-pencil" aria-hidden="true"><mat-icon >edit</mat-icon></i>&nbsp;Update</button></td>        </tr>
+      </tbody>
+    </table>
+    <div class="user-count">
+      <div *ngIf="categorys.length === 0">Currently There is no category </div>
+    </div>
+</div>

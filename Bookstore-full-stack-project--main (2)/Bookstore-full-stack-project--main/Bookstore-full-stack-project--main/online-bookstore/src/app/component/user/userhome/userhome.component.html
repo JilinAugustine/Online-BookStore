@@ -1,0 +1,44 @@
+<div class="dashboard-content">
+    <h1><br><b><h2>User Dashboard</h2></b></h1>
+
+
+    <!-- <div class="stats">
+        <div class="stat-item">
+          <h3>Total Books <mat-icon>books</mat-icon></h3>
+            <p>{{ totalBooks }}</p>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="stat-item">
+          <h3>Total Categories <mat-icon>category</mat-icon></h3>
+            <p>{{ totalCategories }}</p>
+        </div>
+    </div> -->
+    
+    <div (click)="goToUrl('order-list')" [class.selected]="url === '/order-list'">
+      <div class="stats">
+        <div class="stat-item">
+          <h3>Total Orders <mat-icon>receipt_long</mat-icon></h3>
+          <p>{{ totalOrders }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <div (click)="goToUrl('cart-list')" [class.selected]="url === '/cart-list'">
+      <div class="stats">
+        <div class="stat-item">
+          <h3>Total Cart <mat-icon>shopping_cart</mat-icon></h3>
+          <p>{{ totalCartItems }}</p>
+        </div>
+      </div>
+    </div>
+    <div (click)="goToUrl('order-list')" [class.selected]="url === '/order-list'">
+        <div class="stats">
+          <div class="stat-item">
+            <h3>Total Orders Delivered <mat-icon>local_shipping</mat-icon></h3>
+            <p>{{ totalOrders }}</p>
+          </div>
+        </div>
+      </div>
+</div>

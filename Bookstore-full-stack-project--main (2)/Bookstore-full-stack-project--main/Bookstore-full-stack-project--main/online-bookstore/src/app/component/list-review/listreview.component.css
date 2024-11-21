@@ -1,0 +1,81 @@
+/* Container for the entire view */
+.view-reviews-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+#back{
+  background-image: url('../../../../assets/about.avif');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* Header styling */
+.view-reviews-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph styling within list items */
+li p {
+  margin: 5px 0;
+}
+
+/* Username styling */
+li p strong {
+  color: #007bff;
+}
+
+/* Button styling */
+button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #c82333;
+}
+
+/* Icon styling within the button */
+button mat-icon {
+  margin-right: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+/* User count text styling */
+.user-count {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}

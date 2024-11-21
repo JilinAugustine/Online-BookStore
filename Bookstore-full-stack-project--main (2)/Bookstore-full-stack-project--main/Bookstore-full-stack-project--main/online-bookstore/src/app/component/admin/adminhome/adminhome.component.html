@@ -1,0 +1,38 @@
+<div class="main-content">
+  <h1><br>LIST OF USERS</h1><br>
+  <div class="left-panel">
+    <div class="search-bar">
+      <input type="text" [(ngModel)]="searchText" (input)="onSearchInput($event)" placeholder="Search users"><mat-icon >search</mat-icon>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Date of Birth </th>
+          <th>Gender</th>
+          <th>District</th>
+          <th>State</th>
+          <th>PhoneNumber</th>
+          <!-- <th>Operation</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{user.emailId}}</td>
+          <td>{{ user.dateOfBirth }}</td>
+          <td>{{user.gender}}</td>
+          <td>{{user.district}}</td>
+          <td>{{user.state}}</td>
+          <td>{{user.phoneNumber}}</td>
+          <!-- <td><button (click)="deleteUser(user.id)"><i class="fa fa-trash" aria-hidden="true"><mat-icon >delete</mat-icon></i>&nbsp;Delete</button>&nbsp;&nbsp;<button (click)="updateUser(user.id)"><i class="fa fa-pencil" aria-hidden="true"><mat-icon >edit</mat-icon></i>&nbsp;Update</button></td>        </tr> -->
+      </tbody>
+    </table>
+    <div class="user-count">
+      <div *ngIf="users.length === 0">There is no any account currently</div>
+    </div>
+</div>

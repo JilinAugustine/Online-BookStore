@@ -1,0 +1,62 @@
+.main {
+    background: linear-gradient(135deg, #f1f4e9, #e0f7fa);
+    color: #4a148c;
+    font-size: 18px;
+    font-weight: 500;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    height: auto !important;
+    text-align: center;
+    justify-content: center;
+}
+
+.profile .mat-icon {
+    height: auto;
+    width: auto;
+    color: #4a148c;
+    transition: color 0.3s ease;
+}
+
+.profile .mat-icon:hover {
+    color: #7b1fa2;
+}
+
+.profile .uname {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4a148c;
+}
+
+.main > div {
+    cursor: pointer;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.main > div:hover {
+    background-color: #e8f5e9;
+    transform: scale(1.02);
+}
+
+.main > .selected {
+    background-color: #b2ff59;
+    color: #1b5e20;
+}
+
+.main .mat-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}

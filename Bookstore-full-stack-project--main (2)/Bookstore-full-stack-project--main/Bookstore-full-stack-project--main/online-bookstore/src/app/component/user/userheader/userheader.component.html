@@ -1,0 +1,29 @@
+<div class="main">
+    <div class="profile">
+        <div class="profile" (click)="goToProfile(user.id)">
+            <div class="icon-item">
+                <mat-icon>account_circle</mat-icon>
+            </div>
+            <div class="uname">{{user.name}}</div>
+        </div>
+    </div>
+    <hr />
+    <div (click)="gotourl('userhome')" [class.selected]="url === '/userhome'">
+        <mat-icon>dashboard</mat-icon> Dashboard
+    </div>
+    <div (click)="gotourl('book-page')" [class.selected]="url === '/book-page'">
+        <mat-icon>book</mat-icon> List Book
+    </div>
+    <div (click)="gotourl('cart-list')" [class.selected]="url === '/cart-list'">
+        <mat-icon>shopping_cart</mat-icon> Cart List
+    </div>
+    <div (click)="gotourl('order-list')" [class.selected]="url === '/order-list'">
+        <mat-icon>list_alt</mat-icon> Order List
+    </div>
+    <div (click)="gotourl('addreview')" [class.selected]="url === '/addreview'">
+        <mat-icon>rate_review</mat-icon> Add Review
+    </div>
+    <div (click)="gotourl('logout')" [class.selected]="url === '/logout'">
+        <mat-icon>logout</mat-icon> Logout
+    </div>
+</div>

@@ -1,0 +1,85 @@
+.main-content {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+   
+}
+#back{
+    background-image: url('../../../../assets/backdash.jpg');
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
+h1 {
+    text-align: center;
+    color: #444;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.left-panel {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.left-panel div {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ff5722;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+tr:hover td {
+    background-color: #d1e7dd;
+}
+
+td:nth-child(4) {
+    font-weight: bold;
+    color: #28a745;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

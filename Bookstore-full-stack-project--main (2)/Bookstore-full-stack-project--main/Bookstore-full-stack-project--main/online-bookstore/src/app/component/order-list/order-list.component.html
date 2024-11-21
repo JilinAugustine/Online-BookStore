@@ -1,0 +1,41 @@
+<div id="back">
+<div class="main-content">
+    <h1>LIST OF ORDERS</h1><br>
+    <div class="left-panel">
+        <div *ngIf="orderList.length === 0"> Nothing in the order List right now</div>
+        <div *ngIf="orderList.length > 0">
+
+            <table border="2">
+                <tr>
+                    <th>Order Id</th>
+                    <th>Order Date</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Payment Status</th>
+                    <th>Delivered Status</th>
+                </tr>
+                <tr *ngFor="let order of orderList">
+                    <td>
+                        {{order?.orderId}}
+                    </td>
+                    <td>
+                        {{order?.orderedDate}}
+                    </td>
+                    <td>
+                        {{order?.totalquantity}}
+                    </td>
+                    <td>
+                        {{order?.totalPrice}}
+                    </td>
+                    <td>
+                        {{order?.paymentStatus}}
+                    </td>
+                    <td>
+                        {{order?.orderStatus}}
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>

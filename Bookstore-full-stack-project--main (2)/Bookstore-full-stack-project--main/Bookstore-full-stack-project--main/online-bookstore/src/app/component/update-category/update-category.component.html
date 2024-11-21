@@ -1,0 +1,17 @@
+<div class="heading">
+    <div><h1>
+        Update category
+    </h1></div>
+    <div><mat-icon (click)="closeDialog()">close</mat-icon></div>
+</div>
+<div class="category-update-div">
+    <table style="table-layout:fixed;">
+        <tr>
+            <td><b>Category Name</b>:</td>
+            <td><input type="text" [(ngModel)]="category.name" /></td>
+        </tr>
+    </table>
+</div>
+<div class="center-div">
+    <button  class="submit-button" (click)="update()">Update</button>
+</div>
